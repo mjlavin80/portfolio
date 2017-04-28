@@ -1,0 +1,352 @@
+<!DOCTYPE HTML>
+<html> 
+
+<head>
+
+<title> Speed Dating </title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+
+<ul>
+    <li class="n1"><a href="index.html">index</a></li>
+    <li class="n2"><a href="examples.html">examples</a></li>
+    <li class="n3 selected"><a href="revision.html">revision.</a></li>
+    <li class="quebec">&nbsp;</li>
+</ul>
+
+
+
+<div id="page">
+    <div class="champagne">
+        <img src="Champagne.png" alt="champagne" style="height:50px;"></div>
+            <div id="name"> Can't Buy Me Love
+            </div>
+        <p id="demo"> 
+
+<article class="pie">
+      
+        <div  id="law"></div>
+        <div  id="academia"></div>
+        <div  id="psych"></div>
+        <div id="medicine"></div>
+        <div  id="entertainment"></div>
+        <div id="finance"></div>
+        <div  id="socialwork"></div>
+        <div id="undecided"></div>
+        <div  id="humanaffairs"></div>
+        <div id="proathlete"></div>
+        <div id="tech"></div>
+</article>
+</div>
+<!-- <div id="loading">
+    Loading
+</div>
+ -->
+
+<script>
+
+
+
+function onReady(callback) {
+    var intervalID = window.setInterval(checkReady, 2000);
+
+    function checkReady() {
+        if (document.getElementsByTagName('body')[0] !== undefined) {
+            window.clearInterval(intervalID);
+            callback.call(this);
+        }
+    }
+}
+
+function show(id, value) {
+    document.getElementById(id).style.display = value ? 'block' : 'none';
+}
+
+onReady(function () {
+    show('page', true);
+    show('loading', false);
+});
+
+
+
+law = {
+  hoverinfo: 'value+percent', 
+  labels: ['Attractive', 'Sincere', 'Intelligent', 'Fun', 'Ambitious', 'Shared Interests'], 
+  labelssrc: 'eac85:146:5dfef9', 
+  marker: {
+    colors: ['#E53935', '#EF5350', '#BDC3C7', '#EF9A9A', '#FFAB91', '#F44336'], 
+    colorssrc: 'eac85:146:588a7f'
+  }, 
+  name: 'Law', 
+  textinfo: 'label', 
+  textposition: 'outside', 
+  type: 'pie', 
+  values: [27.207, 14.517, 20.31, 19.241, 7.9655, 10.069], 
+  valuessrc: 'eac85:146:577342'
+};
+data = [law];
+layout = {
+  showlegend: false, 
+  title: 'Lawyer'
+};
+Plotly.plot('law', {
+  data: data,
+  layout: layout
+});
+
+academia = {
+  hoverinfo: 'value+percent', 
+  labels: ['Attractive', 'Sincere', 'Intelligent', 'Fun', 'Ambitious', 'Shared Interests'], 
+  labelssrc: 'eac85:148:7816dc', 
+  marker: {
+    colors: ['#E53935', '#EF5350', '#BDC3C7', '#EF9A9A', '#FFAB91', '#F44336'], 
+    colorssrc: 'eac85:148:dfefa7'
+  }, 
+  name: 'Academia', 
+  textinfo: 'label', 
+  textposition: 'outside', 
+  type: 'pie', 
+  values: [24.905, 7.8095, 23.048, 18.429, 8.7619, 8.619], 
+  valuessrc: 'eac85:148:b9261f'
+};
+data = [academia];
+layout = {
+  showlegend: false, 
+  title: 'Academia'
+};
+Plotly.plot('academia', {
+  data: data,
+  layout: layout
+});
+
+psych = {
+  hoverinfo: 'value+percent', 
+  labels: ['Attractive', 'Sincere', 'Intelligent', 'Fun', 'Ambitious', 'Shared Interests'], 
+  labelssrc: 'eac85:150:9869ab', 
+  marker: {
+    colors: ['#E53935', '#EF5350', '#BDC3C7', '#EF9A9A', '#FFAB91', '#F44336'], 
+    colorssrc: 'eac85:150:3f3b25'
+  }, 
+  name: 'Psychology', 
+  textinfo: 'label', 
+  textposition: 'outside', 
+  type: 'pie', 
+  values: [15.667, 15.667, 29.0, 15.667, 14.0, 10.0], 
+  valuessrc: 'eac85:150:a0e013'
+};
+data = [psych];
+layout = {
+  showlegend: false, 
+  title: 'Psychology'
+};
+Plotly.plot('psych', {
+  data: data,
+  layout: layout
+});
+
+medicine = {
+  hoverinfo: 'value+percent', 
+  labels: ['Attractive', 'Sincere', 'Intelligent', 'Fun', 'Ambitious', 'Shared Interests'], 
+  labelssrc: 'eac85:152:602983', 
+  marker: {
+    colors: ['#E53935', '#EF5350', '#BDC3C7', '#EF9A9A', '#FFAB91', '#F44336'], 
+    colorssrc: 'eac85:152:08d37f'
+  }, 
+  name: 'Medicine', 
+  textinfo: 'label', 
+  textposition: 'outside', 
+  type: 'pie', 
+  values: [30.833, 22.5, 20.833, 10.0, 7.0, 8.833], 
+  valuessrc: 'eac85:152:7cb9aa'
+};
+data = [medicine];
+layout = {
+  showlegend: false, 
+  title: 'Medicine'
+};
+Plotly.plot('medicine', {
+  data: data,
+  layout: layout
+});
+
+entertainment = {
+  hoverinfo: 'value+percent', 
+  labels: ['Attractive', 'Sincere', 'Intelligent', 'Fun', 'Ambitious', 'Shared Interests'], 
+  labelssrc: 'eac85:154:dab82f', 
+  marker: {
+    colors: ['#E53935', '#EF5350', '#BDC3C7', '#EF9A9A', '#FFAB91', '#F44336'], 
+    colorssrc: 'eac85:154:43bcb8'
+  }, 
+  name: 'Entertainment', 
+  textinfo: 'label', 
+  textposition: 'outside', 
+  type: 'pie', 
+  values: [17.509, 16.518, 25.427, 18.318, 8.918, 13.409], 
+  valuessrc: 'eac85:154:268eca'
+};
+data = [entertainment];
+layout = {
+  showlegend: false, 
+  title: 'Entertainment'
+};
+Plotly.plot('entertainment', {
+  data: data,
+  layout: layout
+});
+
+finance = {
+  hoverinfo: 'value+percent', 
+  labels: ['Attractive', 'Sincere', 'Intelligent', 'Fun', 'Ambitious', 'Shared Interests'], 
+  labelssrc: 'eac85:156:63858c', 
+  marker: {
+    colors: ['#E53935', '#EF5350', '#BDC3C7', '#EF9A9A', '#FFAB91', '#F44336'], 
+    colorssrc: 'eac85:156:886ff4'
+  }, 
+  name: 'Finance', 
+  textinfo: 'label', 
+  textposition: 'outside', 
+  type: 'pie', 
+  values: [30.667, 14.504, 20.812, 18.318, 9.6196, 10.624], 
+  valuessrc: 'eac85:156:2e4275'
+};
+data = [finance];
+layout = {
+  showlegend: false, 
+  title: 'Finance'
+};
+Plotly.plot('finance', {
+  data: data,
+  layout: layout
+});
+
+socialwork = {
+  hoverinfo: 'value+percent', 
+  labels: ['Attractive', 'Sincere', 'Intelligent', 'Fun', 'Ambitious', 'Shared Interests'], 
+  labelssrc: 'eac85:158:7f9397', 
+  marker: {
+    colors: ['#E53935', '#EF5350', '#BDC3C7', '#EF9A9A', '#FFAB91', '#F44336'], 
+    colorssrc: 'eac85:158:3fe72e'
+  }, 
+  name: 'Social Work', 
+  textinfo: 'label', 
+  textposition: 'outside', 
+  type: 'pie', 
+  values: [13.333, 20.0, 20.0, 18.333, 15.0, 13.333], 
+  valuessrc: 'eac85:158:ce096e'
+};
+data = [socialwork];
+layout = {
+  showlegend: false, 
+  title: 'Social Work'
+};
+Plotly.plot('socialwork', {
+  data: data,
+  layout: layout
+});
+
+undecided = {
+  hoverinfo: 'value+percent', 
+  labels: ['Attractive', 'Sincere', 'Intelligent', 'Fun', 'Ambitious', 'Shared Interests'], 
+  labelssrc: 'eac85:162:9dc48b', 
+  marker: {
+    colors: ['#E53935', '#EF5350', '#BDC3C7', '#EF9A9A', '#FFAB91', '#F44336'], 
+    colorssrc: 'eac85:162:1901f2'
+  }, 
+  name: 'Undecided', 
+  textinfo: 'label', 
+  textposition: 'outside', 
+  type: 'pie', 
+  values: [23.857, 14.857, 23.286, 21.5, 11.833, 11.0], 
+  valuessrc: 'eac85:162:10b786'
+};
+data = [undecided];
+layout = {
+  showlegend: false, 
+  title: 'Undecided'
+};
+Plotly.plot('undecided', {
+  data: data,
+  layout: layout
+});
+
+humanaffairs = {
+  hoverinfo: 'value+percent', 
+  labels: ['Attractive', 'Sincere', 'Intelligent', 'Fun', 'Ambitious', 'Shared Interests'], 
+  labelssrc: 'eac85:164:e736e3', 
+  marker: {
+    colors: ['#E53935', '#EF5350', '#BDC3C7', '#EF9A9A', '#FFAB91', '#F44336'], 
+    colorssrc: 'eac85:164:b698e0'
+  }, 
+  name: 'Human Affairs', 
+  textinfo: 'label', 
+  textposition: 'outside', 
+  type: 'pie', 
+  values: [16.077, 18.077, 18.769, 18.462, 15.538, 13.077], 
+  valuessrc: 'eac85:164:3ba57d'
+};
+data = [humanaffairs];
+layout = {
+  showlegend: false, 
+  title: 'Human Affairs'
+};
+Plotly.plot('humanaffairs', {
+  data: data,
+  layout: layout
+});
+
+proathlete = {
+  hoverinfo: 'value+percent', 
+  labels: ['Attractive', 'Sincere', 'Intelligent', 'Fun', 'Ambitious', 'Shared Interests'], 
+  labelssrc: 'eac85:166:06b9c4', 
+  marker: {
+    colors: ['#E53935', '#EF5350', '#BDC3C7', '#EF9A9A', '#FFAB91', '#F44336'], 
+    colorssrc: 'eac85:166:4964fa'
+  }, 
+  name: 'Pro-Athlete', 
+  textinfo: 'label', 
+  textposition: 'outside', 
+  type: 'pie', 
+  values: [60, 15, 0, 15, 0, 10], 
+  valuessrc: 'eac85:166:fe012a'
+};
+data = [proathlete];
+layout = {
+  showlegend: false, 
+  title: 'Pro Athlete'
+};
+Plotly.plot('proathlete', {
+  data: data,
+  layout: layout
+});
+
+tech = {
+  hoverinfo: 'value+percent', 
+  labels: ['Attractive', 'Sincere', 'Intelligent', 'Fun', 'Ambitious', 'Shared Interests'], 
+  labelssrc: 'eac85:168:5a438b', 
+  marker: {
+    colors: ['#E53935', '#EF5350', '#BDC3C7', '#EF9A9A', '#FFAB91', '#F44336'], 
+    colorssrc: 'eac85:168:d417d5'
+  }, 
+  name: 'Tech', 
+  textinfo: 'label', 
+  textposition: 'outside', 
+  type: 'pie', 
+  values: [25, 20, 25, 20, 10, 0], 
+  valuessrc: 'eac85:168:574a04'
+};
+data = [tech];
+layout = {
+  showlegend: false, 
+  title: 'Tech'
+};
+Plotly.plot('tech', {
+  data: data,
+  layout: layout
+});
+
+</script>
+</body>
+</html>
