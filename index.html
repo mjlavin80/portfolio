@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<title>CAPSTONE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-theme-l1">Capstone</a>
+ 
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;margin-top:43px;" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Past Projects</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://crunchytoastmmm.github.io/Smoking-Use-PA/">Synthesis 1</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://crunchytoastmmm.github.io/synth2/">Synthesis 2</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://asl45.github.io/team-assignment/timeline/index.html">Team Project</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://crunchytoastmmm.github.io/Synth-1-Cap_Everett/">Revised Project</a>
+</nav>
+
+<!-- small screens see this-->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- 1 -->
+<div class="w3-main" style="margin-left:280px">
+
+  <div class="w3-row w3-padding-64">
+    
+      <h1 class="w3-text-teal">1</h1>
+      <p>The dataset I spent the most amount of time manipulating was for Synthesis 2.  Using the Centers for Disease control and prevention was the biggest data set I have ever seen or worked with.  Every single county in the United States had a data value every year for fifteen years.  It was ‘UGE.  I had to spend a bit of time restricting it so it was vertical data instead of the way it was given which was horizontal.  Which meant I had to really create a workflow to incorporate all that data into a single column and to ensure it matched up with the corresponding year and county.  After I processed that data I had to comb through it and delete the data values with totals for the state.  I could not just have the program delete names of states because there are counties named after states.  So I had to manually sift through all that data and delete the total state numbers because I did not need that data and I knew it would cause issues later when it came to the visualization aspect of the data.  After deleting the state totals I had to match the counties with their respective unique code that represents them into a choropleth.  This aspect was not entirely difficult.  The most tedious aspect was going through and double checking the county and making sure it had the correct code. </p>
+</br>
+    <p>I do not think my manipulation of this data really changed the audience's understanding of the data.  I feel I kept the most important aspects, and still kept it mostly preserved, though it is easily read by a computer it is not easily read by a human.  Even if you were to upload the CSV into an excel file the vertical data does not allow one to really understand it, unless they change it back to the horizontal format.  I do appreciate the CDC representing the data in a horizontal format, even though it created more work for me, but it enabled me to quickly look at the data and create a general understanding of the dataset I am working with.  </p>
+</br>
+
+    <p>I did find data for Allegheny County for Lyme Disease but it was incomplete and I was not forthcoming with my trust into the data.  The CDC data file, to me, was the best I was going to find and I still maintain the position.  It was from a reputable source, had more information on how it achieved data collection and was very detailed in terms of the data listing. </p>
+    </div>
+    
+  </div>
+  
+  
+<!-- 2 -->
+<div class="w3-main" style="margin-left:280px">
+<div class="w3-row w3-padding-64">
+    
+      <h1 class="w3-text-teal">2</h1>
+          <p>For the team assignment, I worked with Amanda to produce the Texas execution timeline.  Using an area line graph I felt would provide the maximum impact instead of a shiny line curving up and down.  Using an area line graph also produced a grey ‘wall’ which helped the audience relate that to the grey walls in a prison setting.  If I needed to reproduce this graph in a different way I would choose a bar graph, this would help with that ‘wall’ effect to the audience.  This might be a way to show more ‘accurate’ numbers of executions per year.  This though would lose the time aspect of the executions.  These executions did not happen all in the same month or day, thus with the rigid lines of a bar graph, it would have created that effect. </p> 
+    </div>
+    
+  </div>
+
+
+<!-- 3 -->
+<div class="w3-main" style="margin-left:280px">
+<div class="w3-row w3-padding-64">
+    
+      <h1 class="w3-text-teal">3</h1>
+          <p>In my Synthesis 2 project, I manipulated the color scheme so it was stacked.  It varied from a light tan color to brown from 0-30 cases per year.  I manipulated the color set to be more constrictive for the counties that were within the thirty cases.  The counties that were hit hardest with Lyme disease easily surpasses one hundred and some reached into the five hundreds.  When I first tackled this dataset I found code that read the range of data values and assigned colors accordingly.  After using that color scheme it really did not give a story of the spreading that Lyme Disease has had in the past fifteen years.  So from there, I started to narrow the color scheme and I found that eight colors helped display to the audience the spread across the northeast of Lyme Disease.  </p>
+  </br>
+   <p> If I had to present my findings to an expert or science paper I would not choose a choropleth, for I feel there is some ambiguity in how it represents this dataset.  Instead, I would choose dots to represent my data.  Like I state bellow I think this helps represent the data more effectively and shows a complete picture of the data. </p>
+
+    </div> 
+    
+  </div>
+
+<!-- 4 -->
+<div class="w3-main" style="margin-left:280px">
+<div class="w3-row w3-padding-64">
+    
+      <h1 class="w3-text-teal">4</h1>
+            <p> In terms of comparing multiple elements in my line graph for the Synthesis 1 project I graphed ‘Former Smoker’, ‘Smoking Tobacco Use’,  and ‘Smoke Everyday’.  Displaying the line graph horizontally helps the audience easily see there is a positive correlation between people who smoked every day and smoking tobacco use.  One of the biggest issues with this data set that I found particularly troublesome was the aspect that in 2011 the Centers For Disease Control and Prevention changed their method of surveying.  This caused an unnatural bump and dip in the graph.  For my revision of a prior project, I did choose this project and revised the graph to have a hover effect and to display it with more of a curved line display and thin circles marking each year.  I chose to do this because I wanted to still keep it relatively the same but challenge myself to change it to make it almost unrecognizable to showcase that the same data and essentially the same graph can be changed and become unique and different from its predecessor.  If I was to make another revision I would create two line graphs, one 2005-2010 and then 2011-2015.  This would help the data become more accurately represented and I would more easily be able to signify the surveys method change.</p> 
+    </div>
+    
+  </div>
+
+
+<!-- 5 -->
+<div class="w3-main" style="margin-left:280px">
+<div class="w3-row w3-padding-64">
+    
+      <h1 class="w3-text-teal">5</h1>
+          <p>The item that was the most frustrating, and coincided with the most amount of time spent on any one aspect was the use of the map in my Synthesis 2 project.  Even using code that was already put together, I still had to do a lot of restructuring of my dataset and the code.  It was just a pain.  I was able to make it work with my dataset but was not able to represent it in my website so I had to settle on having an actionable link to the host site bl.ocks.  I even stopped trying to brute force making the code work and try to ‘cheat’ by using an iframe.  This did not work out but this ‘blockage’ enabled me to really diverge my knowledge in many areas that I otherwise would not have pursued.  I do believe I almost read every single forum on stack overflow about creating a choropleth.</p> 
+
+    </div>
+    
+  </div>
+
+
+<!-- 6 -->
+<div class="w3-main" style="margin-left:280px">
+<div class="w3-row w3-padding-64">
+    
+      <h1 class="w3-text-teal">6</h1>
+        <p>I do think my most proud aspect was Synthesis 2 with building the choropleth.  Granted as I stated above I was not able to implement it into my website, but I still was able to build it and reflect my data.  The choropleth is the proudest moment for I had never made anything like it before and to me, it was the most visually stunning.  I have built histograms, line, and bar graphs, but this was on a new level.  Another reason I particularly liked the choropleth was me pulling off the time slider.  I never realized how to make one or how to incorporate, but wow, That aspect of the choropleth was well worth my time to really make it work. </p>
+</br>
+    <p>Looking forward I think I would still use a time slider but instead of a choropleth with shades of color I think I would have like to try something that represents a single dot per Lyme case,  The CDC chose this method, which really does show concentration.  The dots method also preserves more aspects of the data.  With a choropleth, it limits you with shades of color. </p>
+ 
+    </div>
+    
+  </div>
+
+<!-- Revised -->
+<div class="w3-main" style="margin-left:280px">
+  <div class="w3-row">
+      <h1 class="w3-text-teal">Revised Project </h1>
+          <p>For the revised assignment I chose Synthesis 1.  I went through Amanda’s comments and the groups.  I used plotly to make the graph have a hover effect, I also changed the look of the graph to make it more visually striking.  The changes I incorporated were, color differences for the lines, and I made each data value a small circle to highlight each data value.  Another aspect I changed was shortening the data values to four significant figures, to match the rest of the dataset.  After I accomplished those tasks I went through couple ‘tests’ to see how my data would look using different graphs, that was ‘eh’.  With this data set, I think a simple line graph is the easiest to read and understand.  I tried an area line graph and that made it look too busy and cluttered.  Using a bar or histogram I felt did not represent the data well for it was blocks instead of flowing lines which help the audience to understand this data was flowing. </p>   
+ 
+    </div>
+    
+  </div>
+
+
+
+ 
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l1">
+      <div class="w3-main" style="margin-left:280px">
+    <p> hey matt...<a href="https://www.facebook.com/pg/Coralmemes/photos/">click</a> for coral</p> 
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      <div class="w3-main" style="margin-left:280px">
+      <p>Construction with the help of <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
+
