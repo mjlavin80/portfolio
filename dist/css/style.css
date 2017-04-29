@@ -6,6 +6,7 @@ body
 
 .cool1
 {
+  display: inline-block;
   position: absolute;
   margin: auto;
   top: 100;
