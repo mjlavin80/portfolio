@@ -1,6 +1,6 @@
 body 
 {
-	background-color: #FFE066;
+	background-color: #BFD7EA;
 	font-family: Verdana;
 	}
 
@@ -15,13 +15,13 @@ body
   left: 0;
   width: 80%;
   height: 3000px;
-  background-color: #70C1B3;
+  background-color: #E0FF4F;
   border-radius: 25px;
 }
 
 a
 {
-	color: #F25F5C;
+	color: #FF6663;
 	}
 	
 a:hover
@@ -31,14 +31,14 @@ a:hover
 
 b
 {
-	color: #247BA0;
+	color: #0B3954;
 	
 h1
 {
-	color: #247BA0;
+	color: #0B3954;
 	}
 	
 h3
 {
-	color: #247BA0;
+	color: #0B3954;
 }
