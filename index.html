@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <meta charset="utf-8" />
+
+  <link type="text/css" rel="stylesheet" href="dist/css/bootstrap.css" />
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+          <div class="col-md-12">
+            
+			<h1>Final Portfolio</h1>
+          </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>1. A dataset I manipulated</h2>
+			<p><a href = "lastwords.txt">Last words</a></p>
+			<p>This dataset is the final result of my extraction of the last statements found <a href = "https://www.tdcj.state.tx.us/death_row/dr_executed_offenders.html">here</a>. The method I used happened to preserve each individual statement as it was transcribed on the website. However, the context surrounding the execution, such as details of the crime, photo of offender, victims involved, etc. was removed. I believe this manipulation of the data was an important aspect of what I was trying to do with this visualization - that is, that the removal of the criminal aspect behind these statements would lead the audience to interpret them more humanely.</p> 
+			<p>On the other hand, I also acknowledge that the removal of the horrific contexts surrounding these statements and the people/criminals who made them may possibly lessen their emotional impact. However, I decided that the context that this visualization was being presented in (as a part of a larger analysis of execution data) was enough of a reminder that the audience would not be able to escape the morbid nature of the data entirely. </p>
+			<p>In terms of dataset type, I think this was pretty much ideal. Extracting it was a bit messy, but the final product (raw text of last statements) was in the perfect state to turn into a word cloud visualization.</p>
+			
+			<h2>2. A choice I made related to visualization type</h2>
+			<p><a href = "https://asl45.github.io/synthesis-1/">Synthesis 1</a></p>
+			<p>When I finished gathering my personal data for this project, I experimented with many different types of visualizations. The final form ended up being what I thought were the two “best” options - a stacked line graph with two different scales, and three small line graphs stacked vertically. Note that “best” is in quotation marks because I was not completely satisfied with these. The stacked line graph does allow the audience to see matching trends at a glance; however, the two different scales are confusing and make trying to extract numerical data a bit of a headache. Even putting hours of sleep and stress on the same scale is a bit of a stretch, given that one is a count of hours and the latter is a subjective rating scale. The fact that they managed to fit within the same range of numbers was a coincidence. Likewise, the three small graphs have the opposite issue, where judging the value of a graph on a specific day is easy to do, and trying to visualize how the graphs overlap is harder. If I could convert this to something else, I may try a stacked bar graph (with semi-translucent bars), as that would still allow for seeing the data align with each other over time, but possibly make it easier for the audience to discern discrete values from the graph. </p>
+			
+			<h2>3. A choice I made related to design</h2>
+			<p><a href = "https://asl45.github.io/team-assignment/wordcloud/index.html">Word Cloud</a></p>
+			<p>This word cloud only took a bit of time to generate, but took a lot of time to get the design elements just right. The Python library I used had every custom option under the sun available to me, so basically everything was within my jurisdiction. I went with a black background to hint at the words’ morbid roots, then picked a color gradient that, from a color standpoint, did not clash with the background. I also went with a more muted color gradient, again, to separate these words (most of which were rather wholesome) from the bright colors typically associated with positive/warm emotions. This was done in order to highlight the contrast between the words themselves and the contexts in which they were uttered. To revise for an expert, I would perhaps examine the removal of color entirely. The bleakness of grayscale may have a more effective “sobering” effect on experts, who may be rather desensitized to the subject matter.</p>
+			
+			<h2>4. A choice I made comparing a thing to another</h2>
+			<p><a href = "https://asl45.github.io/synthesis-2/">Synthesis 2</a></p>
+			<p> When I compared grocery prices, I decided to go with what I knew from personal experience were likely to be the cheapest in terms of average price per unit - prices from Aldi and Costco. However, to people who may not have as much experience with these chains, adding another popular store like Giant Eagle or Walmart may have helped put the prices that were given in a better perspective. </p>
+			<p> The comparison itself as it was presented in this synthesis would also have been much more effective if the “price per unit” was accompanied with data about what the “unit” in question actually was. The unit could not be the same due to the wide variety of products being sampled, but saying “$0.06 per egg” (for example) would be more effective than “$0.06 per unspecified unit that is probably individual eggs but it’s not listed here so you have no way of knowing for sure".</p>
+			
+			<h2>5. Something frustrating</h2>
+			<p><a href = "https://asl45.github.io/synthesis-2/">Synthesis 2</a></p>
+			<p>Synthesis 2 was also the project that led to the most stress throughout the whole semester. Much of this is covered in greater detail in that project’s artist statement, but to recap, my original plan for this project was to have a category sort/filter option, to make the graph less intimidating and large. Bokeh seemed like the best choice for this based on their gallery examples; however, what I did not realize was that the functionality behind those buttons was behind either a Bokeh server (out of the question, from what I understand about it) or CustomJS. However, trying to implement JavaScript callbacks within the web page, when the Bokeh documentation was written to people already familiar with the language and not amateurs, was incredibly frustrating.</p>
+			<p>I probably would have been able to figure things out after slamming my brain against the far-too-sparse-for-my-needs documentation for another week, but I decided that it was time to move on after evaluating the time I had remaining for the assignment and the other things I needed to prioritize. Procedurally, I learned to do more investigation into the methods of how certain things are done, and know if my own skills are sufficient enough for the task before committing fully to doing so. </p>
+			
+			<h2>6. Something I'm proud of</h2>
+			<p><a href = "https://asl45.github.io/synthesis-1/">Synthesis 1</a></p>
+			<p>While it’s definitely nothing impressive in the grand scale of things, my Synthesis 1 graph personally had the most sense of accomplishment attached to it. It sticks out in my mind because it was the result of a lot of learning I had to do on the fly, and was the result of a lot of hard work I put in those weeks. I’m proud of it because I was able to take a messy spreadsheet and turn it into something pleasant to look at that told a story, which, to me, is the basis of data visualization and a very important principle to carry on with me when it comes to tackling bigger and better things in the future. </p>
+		</div>
+     </div>
+  </div>
+ </div>
+
+  <!-- JavaScript -->
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <script src="dist/js/bootstrap.js"></script>
+
+</body>
+</html>
