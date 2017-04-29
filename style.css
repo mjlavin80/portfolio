@@ -1,0 +1,44 @@
+body 
+{
+	background-color: #BFD7EA;
+	font-family: Verdana;
+	}
+
+.cool1
+{
+  position: absolute;
+  margin: auto;
+  right: 0 px;
+  left: 0 px;
+  top: 50 px:
+  bottom: 100 px;
+  background-color: #E0FF4F;
+  border-radius: 25px;
+  padding: 20px; 
+  width: 700px;
+  height: 2750px;
+}
+
+a
+{
+	color: #FF6663;
+	}
+	
+a:hover
+{
+	cursor: hand;
+	}
+
+b
+{
+	color: #0B3954;
+	
+h1
+{
+	color: #0B3954;
+	}
+	
+h3
+{
+	color: #0B3954;
+}
